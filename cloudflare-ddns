@@ -11,7 +11,7 @@ ip_file="/etc/cloudflare-ddns.ip.txt"
 if [ "$eth_card" = "auto" ]; then
     eth_card=""
 else
-    eth_card="iof $eth_card"
+    eth_card="oif $eth_card"
 fi
 if [ "$record_type" = "AAAA" ]; then
     if [ "$ip_index" = "internet" ]; then
